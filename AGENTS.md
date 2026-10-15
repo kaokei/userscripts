@@ -37,7 +37,7 @@
 
 修改脚本后提升 `@version`，提交并推送即可发布。`@updateURL` 和 `@downloadURL` 均指向该源文件的公开 URL；不同变体使用不同的名称或命名空间，用户每次启用一个同用途主题。
 
-`scripts/zhihu-helper.user.js` 与 `scripts/zhihu-helper.meta.js` 是迁移旧安装地址的固定兼容文件，保留当前迁移版本即可；正式维护入口是 `zhihu/reader/github.user.js`。根目录日期命名的旧入口指向正式文件，历史备份与截图留在本地。
+`scripts/` 和 `tests/` 仅作为本地辅助目录，通过 `.gitignore` 忽略。正式维护入口是 `zhihu/reader/github.user.js`。根目录日期命名的旧入口指向正式文件，历史备份与截图留在本地。
 
 ### Issue tracker（问题追踪）
 

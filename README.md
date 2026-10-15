@@ -28,12 +28,12 @@ zhihu/
     ├── document.user.js
     ├── workbench.user.js
     └── terminal.user.js
-scripts/                 兼容先前发布的两个旧链接
-tests/                   浏览器验证页与验证记录
 docs/agents/             工程技能的仓库约定
 ```
 
 新脚本采用 `<站点>/<用途>/<变体>.user.js`。同一个网站可以有多个用途目录，同一个用途可以有多个变体。只有一个变体时，也可以命名为 `default.user.js`。
+
+`scripts/` 中的旧版辅助文件、`tests/` 中的浏览器验证页和验证记录仅保留在维护者本地，已通过 `.gitignore` 忽略。
 
 ## 更新已有脚本
 
@@ -64,11 +64,9 @@ git push
 
 将示例路径替换为真实目录和文件名，设置正确的 `@match` 页面范围。不同变体使用不同的脚本名称或命名空间；同一变体后续更新时保持身份和 URL 稳定。
 
-## 旧链接兼容
+## 旧安装迁移
 
-先前发布的 `scripts/zhihu-helper.user.js` 与 `scripts/zhihu-helper.meta.js` 保留迁移版本。原用户检查到该版本并更新后，会改为从 `zhihu/reader/github.user.js` 获取后续更新。
-
-新安装直接使用上表入口。未来只需维护新的正式源码，旧兼容文件无需跟随每次功能变更同步。
+先前发布的 `scripts/zhihu-helper.user.js` 与 `scripts/zhihu-helper.meta.js` 已停止提供在线更新。仍使用旧地址的安装，请从上表的 GitHub 风格入口重新安装，后续更新将使用正式源码地址。
 
 ## 版本记录与验证
 
@@ -80,8 +78,6 @@ Git 提交保存每次源码变更；旧主题备份和浏览截图继续留在�
 node --check zhihu/reader/github.user.js
 ```
 
-此命令只检查源码语法，不生成文件。浏览器验证页为 `tests/2026-10-14-reader-github.html`，可用本地静态服务分别打开普通地址和带 `?late=1` 的地址，检查两种加载时机。
-
-本次目录调整的检查记录见 [2026-10-15 目录重组验证结果](tests/2026-10-15-目录重组验证结果.json)。
+此命令只检查源码语法，不生成文件。若本地保留了 `tests/2026-10-14-reader-github.html`，可用本地静态服务分别打开普通地址和带 `?late=1` 的地址，检查两种加载时机。
 
 更新机制参考 [Tampermonkey 官方元数据文档](https://www.tampermonkey.net/documentation.php#meta:updateURL)。
