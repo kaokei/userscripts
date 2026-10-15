@@ -4,12 +4,13 @@
 
 ## 脚本目录
 
-| 网站 | 脚本用途 | 主题变体 | 源码 | 安装与更新 |
+| 网站 | 脚本用途 | 变体 | 源码 | 安装与更新 |
 | --- | --- | --- | --- | --- |
 | 知乎 | 阅读界面 | GitHub 风格，当前主用版 | [github.user.js](zhihu/reader/github.user.js) | [安装](https://raw.githubusercontent.com/kaokei/userscripts/main/zhihu/reader/github.user.js) |
 | 知乎 | 阅读界面 | 文档阅读，暖灰背景 | [document.user.js](zhihu/reader/document.user.js) | [安装](https://raw.githubusercontent.com/kaokei/userscripts/main/zhihu/reader/document.user.js) |
 | 知乎 | 阅读界面 | 极简工作台 | [workbench.user.js](zhihu/reader/workbench.user.js) | [安装](https://raw.githubusercontent.com/kaokei/userscripts/main/zhihu/reader/workbench.user.js) |
 | 知乎 | 阅读界面 | 深色终端 | [terminal.user.js](zhihu/reader/terminal.user.js) | [安装](https://raw.githubusercontent.com/kaokei/userscripts/main/zhihu/reader/terminal.user.js) |
+| 通用 | 解除复制限制 | 强力复制 | [default.user.js](common/copy/default.user.js) | [安装](https://raw.githubusercontent.com/kaokei/userscripts/main/common/copy/default.user.js) |
 
 文档阅读、极简工作台和终端主题沿用先前各自备份的源码，后续可分别维护。GitHub 风格包含目前最新的阅读界面与导航功能。
 
@@ -19,9 +20,18 @@
 
 不同主题具有独立的脚本身份和更新地址，可以保留多个主题并在 Tampermonkey 中切换启用状态。GitHub 主用版保留原来的“知乎小助手”名称和命名空间，便于旧版升级。
 
+## 网页强力复制
+
+“Copying Lifted 网页强力复制”适用于所有网站，沿用原 `copy-test.js` 的处理逻辑，临时解除复制、选取和右键等限制。它会拦截键盘、鼠标等事件，可能影响网页交互，适合在需要复制时启用并刷新页面，完成后禁用并再次刷新。
+
+迁移版保留原名称和命名空间，版本为 `1.0.5`。原安装若仍使用 Greasy Fork 更新地址，请通过上表入口安装迁移版，后续通过本仓库更新。
+
 ## 目录约定
 
 ```text
+common/
+└── copy/
+    └── default.user.js
 zhihu/
 └── reader/
     ├── github.user.js
@@ -32,6 +42,8 @@ docs/agents/             工程技能的仓库约定
 ```
 
 新脚本采用 `<站点>/<用途>/<变体>.user.js`。同一个网站可以有多个用途目录，同一个用途可以有多个变体。只有一个变体时，也可以命名为 `default.user.js`。
+
+跨网站通用脚本放在 `common/<用途>/` 下。
 
 `scripts/` 中的旧版辅助文件、`tests/` 中的浏览器验证页和验证记录仅保留在维护者本地，已通过 `.gitignore` 忽略。
 
