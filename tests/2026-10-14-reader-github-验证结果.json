@@ -1,0 +1,348 @@
+{
+  "version": "2026.10.14.2",
+  "early": [
+    {
+      "name": "导航入口与空占位隐藏，搜索独立显示",
+      "passed": true
+    },
+    {
+      "name": "搜索输入与提交按钮保留交互",
+      "passed": true
+    },
+    {
+      "name": "搜索旁的直答与消息入口保持隐藏",
+      "passed": true
+    },
+    {
+      "name": "搜索固定在顶部，正文预留空间",
+      "passed": true
+    },
+    {
+      "name": "原生搜索框宽度限制被移除，搜索框宽度完整",
+      "passed": true
+    },
+    {
+      "name": "搜索框仅保留外边框，按钮不再越出输入框",
+      "passed": true
+    },
+    {
+      "name": "搜索输入与提交按钮互不挤压",
+      "passed": true
+    },
+    {
+      "name": "右下角悬浮按钮组隐藏",
+      "passed": true
+    },
+    {
+      "name": "侧栏与发布区隐藏，主内容居中",
+      "passed": true
+    },
+    {
+      "name": "关注与赞同按钮保留低对比文本样式",
+      "passed": true
+    },
+    {
+      "name": "采用 GitHub 的白色内容背景",
+      "passed": true
+    },
+    {
+      "name": "标题采用系统字体，卡片阴影和头像隐藏",
+      "passed": true
+    },
+    {
+      "name": "标签页标题与搜索提示中性化",
+      "passed": true
+    },
+    {
+      "name": "阅读笔记为真实的可访问链接",
+      "passed": true
+    },
+    {
+      "name": "点击阅读笔记复用原生首页逻辑",
+      "passed": true
+    },
+    {
+      "name": "保留带修饰键的新标签页行为",
+      "passed": true
+    },
+    {
+      "name": "页面动态更新后重建工具栏，避免重复挂载",
+      "passed": true
+    },
+    {
+      "name": "重建后的标题仍复用原生入口",
+      "passed": true
+    },
+    {
+      "name": "问题页回答适应面板宽度，统计侧栏隐藏",
+      "passed": true
+    },
+    {
+      "name": "封面折叠入口低于标题，与正文互不重叠",
+      "passed": true
+    },
+    {
+      "name": "封面与内层不再继承垂直居中位移",
+      "passed": true
+    },
+    {
+      "name": "展开封面后操作区位于图片下方",
+      "passed": true
+    },
+    {
+      "name": "收起后原图片、父节点与紧凑布局保留",
+      "passed": true
+    },
+    {
+      "name": "120 张初始图片全部折叠，无遗漏",
+      "passed": true
+    },
+    {
+      "name": "原图片节点、父节点与懒加载属性保留",
+      "passed": true
+    },
+    {
+      "name": "旧版图片控件升级后恢复图片原父节点",
+      "passed": true
+    },
+    {
+      "name": "原图片事件监听保留",
+      "passed": true
+    },
+    {
+      "name": "折叠时图片不占用正文空间",
+      "passed": true
+    },
+    {
+      "name": "展开后可以查看原图片",
+      "passed": true
+    },
+    {
+      "name": "行内图片与正文外图片保持原位置",
+      "passed": true
+    },
+    {
+      "name": "已有折叠区保持原结构",
+      "passed": true
+    },
+    {
+      "name": "所有初始网站图标清空",
+      "passed": true
+    },
+    {
+      "name": "批量动态新增图片全部折叠",
+      "passed": true
+    },
+    {
+      "name": "图片样式变为块级后自动折叠",
+      "passed": true
+    },
+    {
+      "name": "重复渲染不产生嵌套折叠，保留展开状态",
+      "passed": true
+    },
+    {
+      "name": "新增及重新写入的网站图标继续清空",
+      "passed": true
+    },
+    {
+      "name": "站点改写标签页标题后恢复中性标题",
+      "passed": true
+    },
+    {
+      "name": "搜索提示更新后保持中性，保留用户输入",
+      "passed": true
+    },
+    {
+      "name": "网站按原父节点删除图片不会报错，折叠控件同步清理",
+      "passed": true
+    },
+    {
+      "name": "网站移动图片时保留原节点及展开状态",
+      "passed": true
+    },
+    {
+      "name": "整块正文替换后仍折叠新图片",
+      "passed": true
+    }
+  ],
+  "late": [
+    {
+      "name": "导航入口与空占位隐藏，搜索独立显示",
+      "passed": true
+    },
+    {
+      "name": "搜索输入与提交按钮保留交互",
+      "passed": true
+    },
+    {
+      "name": "搜索旁的直答与消息入口保持隐藏",
+      "passed": true
+    },
+    {
+      "name": "搜索固定在顶部，正文预留空间",
+      "passed": true
+    },
+    {
+      "name": "原生搜索框宽度限制被移除，搜索框宽度完整",
+      "passed": true
+    },
+    {
+      "name": "搜索框仅保留外边框，按钮不再越出输入框",
+      "passed": true
+    },
+    {
+      "name": "搜索输入与提交按钮互不挤压",
+      "passed": true
+    },
+    {
+      "name": "右下角悬浮按钮组隐藏",
+      "passed": true
+    },
+    {
+      "name": "侧栏与发布区隐藏，主内容居中",
+      "passed": true
+    },
+    {
+      "name": "关注与赞同按钮保留低对比文本样式",
+      "passed": true
+    },
+    {
+      "name": "采用 GitHub 的白色内容背景",
+      "passed": true
+    },
+    {
+      "name": "标题采用系统字体，卡片阴影和头像隐藏",
+      "passed": true
+    },
+    {
+      "name": "标签页标题与搜索提示中性化",
+      "passed": true
+    },
+    {
+      "name": "阅读笔记为真实的可访问链接",
+      "passed": true
+    },
+    {
+      "name": "点击阅读笔记复用原生首页逻辑",
+      "passed": true
+    },
+    {
+      "name": "保留带修饰键的新标签页行为",
+      "passed": true
+    },
+    {
+      "name": "页面动态更新后重建工具栏，避免重复挂载",
+      "passed": true
+    },
+    {
+      "name": "重建后的标题仍复用原生入口",
+      "passed": true
+    },
+    {
+      "name": "问题页回答适应面板宽度，统计侧栏隐藏",
+      "passed": true
+    },
+    {
+      "name": "封面折叠入口低于标题，与正文互不重叠",
+      "passed": true
+    },
+    {
+      "name": "封面与内层不再继承垂直居中位移",
+      "passed": true
+    },
+    {
+      "name": "展开封面后操作区位于图片下方",
+      "passed": true
+    },
+    {
+      "name": "收起后原图片、父节点与紧凑布局保留",
+      "passed": true
+    },
+    {
+      "name": "120 张初始图片全部折叠，无遗漏",
+      "passed": true
+    },
+    {
+      "name": "原图片节点、父节点与懒加载属性保留",
+      "passed": true
+    },
+    {
+      "name": "旧版图片控件升级后恢复图片原父节点",
+      "passed": true
+    },
+    {
+      "name": "原图片事件监听保留",
+      "passed": true
+    },
+    {
+      "name": "折叠时图片不占用正文空间",
+      "passed": true
+    },
+    {
+      "name": "展开后可以查看原图片",
+      "passed": true
+    },
+    {
+      "name": "行内图片与正文外图片保持原位置",
+      "passed": true
+    },
+    {
+      "name": "已有折叠区保持原结构",
+      "passed": true
+    },
+    {
+      "name": "所有初始网站图标清空",
+      "passed": true
+    },
+    {
+      "name": "批量动态新增图片全部折叠",
+      "passed": true
+    },
+    {
+      "name": "图片样式变为块级后自动折叠",
+      "passed": true
+    },
+    {
+      "name": "重复渲染不产生嵌套折叠，保留展开状态",
+      "passed": true
+    },
+    {
+      "name": "新增及重新写入的网站图标继续清空",
+      "passed": true
+    },
+    {
+      "name": "站点改写标签页标题后恢复中性标题",
+      "passed": true
+    },
+    {
+      "name": "搜索提示更新后保持中性，保留用户输入",
+      "passed": true
+    },
+    {
+      "name": "网站按原父节点删除图片不会报错，折叠控件同步清理",
+      "passed": true
+    },
+    {
+      "name": "网站移动图片时保留原节点及展开状态",
+      "passed": true
+    },
+    {
+      "name": "整块正文替换后仍折叠新图片",
+      "passed": true
+    }
+  ],
+  "narrow": {
+    "collapsed": {
+      "mediaBelowTitle": true,
+      "searchContained": true,
+      "textBesideControl": true,
+      "width": 600
+    },
+    "expanded": {
+      "actionsBelowImage": true,
+      "mediaVisible": true,
+      "textBesideImage": true
+    }
+  }
+}

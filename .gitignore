@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+.scratch/
+.env
+.env.*
+
+# 日期命名的根目录文件为本地旧入口、备份和历史说明。
+/2026-*.js
+/2026-*.md
+/*.png
+/tests/2026-10-12-*
