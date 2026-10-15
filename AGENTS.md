@@ -33,9 +33,11 @@
 
 ### 脚本维护与发布
 
-正式脚本维护在 `scripts/*.user.js`；修改或新增脚本时，按 `README.md` 的发布约定提升版本号并运行构建与检查。`.meta.js` 与安装目录由 `npm run build` 生成。
+正式脚本按 `<站点>/<用途>/<变体>.user.js` 分类，当前知乎阅读主题位于 `zhihu/reader/`。每个文件是可直接安装的完整 JavaScript 源码，使用独立的安装和更新 URL。新增脚本或变体时，补充 `README.md` 中的安装入口。
 
-根目录日期命名的脚本是本地兼容入口或历史备份；发布内容以 `scripts/` 为准。历史截图和本地备份由 `.gitignore` 排除。
+修改脚本后提升 `@version`，提交并推送即可发布。`@updateURL` 和 `@downloadURL` 均指向该源文件的公开 URL；不同变体使用不同的名称或命名空间，用户每次启用一个同用途主题。
+
+`scripts/zhihu-helper.user.js` 与 `scripts/zhihu-helper.meta.js` 是迁移旧安装地址的固定兼容文件，保留当前迁移版本即可；正式维护入口是 `zhihu/reader/github.user.js`。根目录日期命名的旧入口指向正式文件，历史备份与截图留在本地。
 
 ### Issue tracker（问题追踪）
 

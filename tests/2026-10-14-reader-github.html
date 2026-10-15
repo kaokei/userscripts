@@ -34,7 +34,7 @@
     <script>
         const lateInit = new URLSearchParams(location.search).has('late');
         if (!lateInit) {
-            document.write('<script src="../scripts/zhihu-helper.user.js"><\/script>');
+            document.write('<script src="../zhihu/reader/github.user.js"><\/script>');
         }
     </script>
 </head>
@@ -282,7 +282,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             if (lateInit) {
                 const script = document.createElement('script');
-                script.src = '../scripts/zhihu-helper.user.js';
+                script.src = '../zhihu/reader/github.user.js';
                 script.onload = run;
                 document.head.appendChild(script);
             } else {
