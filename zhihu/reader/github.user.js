@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         知乎小助手
 // @namespace    http://tampermonkey.net/
-// @version      2026.10.15.2
+// @version      2026.10.16.1
 // @description  GitHub 风格阅读笔记，点击标题返回首页刷新，保留搜索、图片折叠和原生交互。
 // @homepageURL  https://github.com/kaokei/userscripts
 // @supportURL   https://github.com/kaokei/userscripts/issues
@@ -130,6 +130,11 @@
             --MapBG01: var(--reader-background) !important;
             --MapBG02: #f6f8fa !important;
             color-scheme: light !important;
+        }
+        /* 统一用户头像为圆形，同时覆盖评论区及根节点之外的弹窗。 */
+        .Avatar {
+            border-radius: 50% !important;
+            object-fit: cover !important;
         }
         html,
         body {
